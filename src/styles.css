@@ -1,0 +1,6 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.master {
+  background-color: #f2f3f5;
+  min-height: 100vh;
+}

@@ -1,0 +1,24 @@
+<div class="master  container-fluid">
+  <div *ngIf="loading" class="row text-center" style="background-color: red; color: white;">
+    <h2>Loading...</h2>
+  </div>
+  <div class="row" >
+    <h1>Face Detection Demo</h1>
+    <div class="col p-5">
+      <div class="row">
+        <h4>WebCam Stream</h4>
+        <!-- <input
+          type="file"
+          class="custom-file-input"
+          (change)="fileChange($event)"
+        /> -->
+        <video controls autoplay width="480px" height="480px" id="vidEl" #vidEl></video>
+      </div>
+      <div class="row mt-5">
+        <h4>Predictions</h4>
+        <span *ngIf="predictions">{{predictions | json}}</span>
+        <span *ngIf="!predictions">None</span>
+      </div>
+    </div>
+  </div>
+</div>
