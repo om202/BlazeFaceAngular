@@ -12,7 +12,8 @@
           class="custom-file-input"
           (change)="fileChange($event)"
         /> -->
-        <video controls autoplay width="480px" height="480px" id="vidEl" #vidEl></video>
+        <video controls=false autoplay width="0" height="0" id="vidEl" #vidEl></video>
+        <canvas id="canvEl" #canvEl></canvas>
       </div>
       <div class="row mt-5">
         <h4>Predictions</h4>
